@@ -67,3 +67,47 @@ p {
 .btn.wrong {
     background-color: #dc3545;
 }
+
+/* Réinitialiser les styles de base pour les marges et les bordures */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général pour la barre de navigation */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Effet de survol pour les éléments du menu */
+.menu a:hover {
+    background-color: #407d85;
+    color: #000000;
+}
+
+/* Effet actif pour le lien sélectionné */
+.menu a:active {
+    background-color: #444;
+}
