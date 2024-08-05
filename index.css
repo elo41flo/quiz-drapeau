@@ -94,16 +94,3 @@ nav {
 .menu a:hover {
     background-color: #555; /* Change la couleur de fond au survol */
 }
-
-/* Media Query pour les petits écrans */
-@media (max-width: 600px) {
-    .menu li {
-        display: block; /* Empile les éléments verticalement sur les petits écrans */
-        margin: 5px 0; /* Espacement vertical entre les éléments */
-    }
-
-    .menu a {
-        display: block;
-        padding: 15px; /* Augmente le padding pour une meilleure lisibilité sur les petits écrans */
-    }
-}
