@@ -94,3 +94,15 @@ nav {
 .menu a:hover {
     background-color: #555; /* Change la couleur de fond au survol */
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+}
