@@ -37,6 +37,10 @@ nav a:hover {
 }
 
 @media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
     nav {
         font-size: 14px;
     }
