@@ -20,7 +20,7 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = 'Suivant';
-    nextButton.style.display = 'none'; // Hide the button at the start
+    nextButton.style.display = 'none'; 
     showQuestion();
 }
 
