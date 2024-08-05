@@ -95,3 +95,17 @@ nav a {
 nav a:hover {
     background-color: #e2e6ea; /* Change la couleur de fond au survol */
 }
+
+/* Media Query pour les petits écrans */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Empile les éléments du menu verticalement */
+        align-items: center; /* Centre les éléments du menu */
+    }
+
+    nav a {
+        margin: 5px 0; /* Ajuste l'espacement entre les éléments */
+        width: 100%; /* Fait en sorte que les éléments prennent toute la largeur disponible */
+        text-align: center; /* Centre le texte */
+    }
+}
