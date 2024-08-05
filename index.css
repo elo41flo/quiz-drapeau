@@ -69,14 +69,29 @@ p {
 }
 
 /*style du menu*/
-nav a{
-    float: center;
-    text-decoration: underline;
+/* Style du menu */
+nav {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    background-color: #f8f9fa; /* Ajoute une couleur de fond pour le contraste */
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ajoute une ombre pour le style */
+}
+
+nav a {
+    text-decoration: none;
     color: black;
     background-color: #ffffff;
     height: 36px;
-    line-height: 33px;
-    padding: 0 10px;
+    line-height: 36px; /* Aligne verticalement le texte */
+    padding: 0 15px; /* Augmente le padding pour une meilleure lisibilité */
     font-family: sans-serif;
     font-size: 13px;
+    margin: 0 5px; /* Espacement entre les éléments */
+    border-radius: 5px; /* Ajoute des coins arrondis pour le style */
+}
+
+nav a:hover {
+    background-color: #e2e6ea; /* Change la couleur de fond au survol */
 }
