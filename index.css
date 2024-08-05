@@ -69,43 +69,46 @@ p {
 }
 
 /*style du menu*/
-/* Style du menu */
 nav {
-    display: flex;
-    justify-content: center; /* Centre les éléments horizontalement */
-    background-color: #f8f9fa; /* Ajoute une couleur de fond pour le contraste */
+    background-color: #333;
     padding: 10px;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ajoute une ombre pour le style */
+    text-align: center; /* Centre le menu horizontalement */
 }
 
-nav a {
+.menu {
+    list-style-type: none; /* Supprime les puces des listes */
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline; /* Affiche les éléments de la liste en ligne */
+    margin: 0 10px; /* Espacement entre les éléments */
+}
+
+.menu a {
+    color: white;
     text-decoration: none;
-    color: black;
-    background-color: #ffffff;
-    height: 36px;
-    line-height: 36px; /* Aligne verticalement le texte */
-    padding: 0 15px; /* Augmente le padding pour une meilleure lisibilité */
+    padding: 10px 20px;
+    display: inline-block;
     font-family: sans-serif;
-    font-size: 13px;
-    margin: 0 5px; /* Espacement entre les éléments */
-    border-radius: 5px; /* Ajoute des coins arrondis pour le style */
+    font-size: 14px;
+    border-radius: 5px;
 }
 
-nav a:hover {
-    background-color: #e2e6ea; /* Change la couleur de fond au survol */
+.menu a:hover {
+    background-color: #555; /* Change la couleur de fond au survol */
 }
 
 /* Media Query pour les petits écrans */
 @media (max-width: 600px) {
-    nav {
-        flex-direction: column; /* Empile les éléments du menu verticalement */
-        align-items: center; /* Centre les éléments du menu */
+    .menu li {
+        display: block; /* Empile les éléments verticalement sur les petits écrans */
+        margin: 5px 0; /* Espacement vertical entre les éléments */
     }
 
-    nav a {
-        margin: 5px 0; /* Ajuste l'espacement entre les éléments */
-        width: 100%; /* Fait en sorte que les éléments prennent toute la largeur disponible */
-        text-align: center; /* Centre le texte */
+    .menu a {
+        display: block;
+        padding: 15px; /* Augmente le padding pour une meilleure lisibilité sur les petits écrans */
     }
 }
