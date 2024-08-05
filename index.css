@@ -17,12 +17,12 @@ h1, h3, p {
 }
 
 nav {
-    background-color: #007bff;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    box-sizing: border-box;
+    background-color: #007bff !important;
+    padding: 10px !important;
+    width: 100% !important;
+    text-align: center !important;
+    color: white !important;
+    box-sizing: border-box !important;
 }
 
 nav a {
