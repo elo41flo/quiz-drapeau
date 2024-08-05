@@ -5,8 +5,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    height: 1020px;
+    width: 100%;
+    height: auto;
     overflow-x: hidden;
 }
 
