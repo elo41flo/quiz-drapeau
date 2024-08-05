@@ -7,6 +7,8 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 h1, h3, p {
     text-align: center;
@@ -99,7 +101,7 @@ nav {
 }
 
 /* Responsive styles */
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .menu {
         flex-direction: column;
         align-items: center;
