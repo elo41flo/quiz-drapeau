@@ -8,13 +8,7 @@ body {
     align-items: center;
     height: 100vh;
 }
-h1 {
-    text-align: center;
-}
-h3 {
-    text-align: center;
-}
-p {
+h1, h3, p {
     text-align: center;
 }
 
@@ -83,7 +77,7 @@ nav {
 }
 
 .menu li {
-    display: inline; /* Affiche les éléments de la liste en ligne */
+    display: inline-block; /* Affiche les éléments de la liste en ligne */
     margin: 0 10px; /* Espacement entre les éléments */
 }
 
