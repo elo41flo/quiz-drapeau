@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: 'Le drapeau est constitué de bleu, blanc et rouge, les coulerus sont à la verticale.',
+        question: 'Le drapeau est constitué de bleu, blanc et rouge, les couleurs sont à la verticale.',
         answers: [
             { text: 'Chine', correct: false },
             { text: 'France', correct: true },
