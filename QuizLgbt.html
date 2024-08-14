@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html lang = fr>
-    <head>
-        <title>Quiz drapeau basique</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <!--menu-->
-        <nav>
-            <ul class="menu">
-                <li><a href="Index.html">Page d'accueil</a></li>
-                <li><a href="QuizBasique.html">Quiz Basique</a></li>
-                <li><a href="QuizLgbt.html">Quiz LGBT</a></li>
-            </ul>
-        </nav>
+<html lang="fr">
+<head>
+    <title>Quiz LGBT</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="Index.html">Page d'accueil</a></li>
+            <li><a href="QuizBasique.html">Quiz Basique</a></li>
+            <li><a href="QuizLgbt.html">Quiz LGBT</a></li>
+        </ul>
+    </nav>
 
-        <!--Contenue de la page Quiz Basique-->
-        <h1>Quiz Basique</h1>
-        <h3>Vous allez commencer une partie de 10 questions !</h3>
-        <p>Vous allez être chronométré. À chaque mauvaise réponse,</p>
-        <p>le chromètre augmentera de 10 secondes.</p>
-        <div id="timer">Temps: 0s</div>
-        <div id="quiz-container">
-            <div id="question-container">
-                <p id="question"></p>
-                <div id="answer-buttons" class="btn-container"></div>
-            </div>
-        <button id="next-btn" class="btn-container">Suivant</button>
-        </div>
-        <script src="QuizLgbt.js"></script>
-    </body>
+    <!-- Contenu de la page Quiz LGBT -->
+    <h1>Quiz LGBT</h1>
+    <h3>Vous allez commencer une partie de 10 questions !</h3>
+    <p>Vous allez être chronométré. À chaque mauvaise réponse,</p>
+    <p>le chronomètre augmentera de 10 secondes.</p>
+
+    <label for="difficulty">Choisissez un niveau de difficulté :</label>
+    <select id="difficulty">
+        <option value="easy">Facile</option>
+        <option value="medium">Moyen</option>
+        <option value="hard">Difficile</option>
+    </select>
+
+    <button onclick="startQuiz()">Commencer le Quiz</button>
+
+    <div id="timer">Temps: 0s</div>
+
+    <div id="question"></div>
+    <div id="answer-buttons"></div>
+    <div id="timer"></div>
+        <button id="next-btn" class="btn-container" onclick="submitAnswer()">Suivant</button>
+    </div>
+
+    <p id="result"></p>
+
+    <script src="QuizLgbt.js"></script>
+</body>
 </html>

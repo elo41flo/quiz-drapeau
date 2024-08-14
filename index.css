@@ -1,98 +1,139 @@
+/* Style de base pour le corps de la page */
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Style du menu de navigation */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    min-height: 1100px;
-    overflow-x: hidden;
-    box-sizing: border-box;
+    justify-content: center;
 }
 
-#timer {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.menu li {
+    margin: 0 15px;
 }
 
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Style du conteneur du quiz */
 #quiz-container {
-    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
     padding: 20px;
+    background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 500px;
-    width: 100%;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-#question-container {
+/* Style pour les questions */
+#question {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
+/* Style des boutons de réponse */
 .btn-container {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btn {
     background-color: #007bff;
-    color: white;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     margin: 5px;
-    cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
-.btn.correct {
+.correct {
     background-color: #28a745;
 }
 
-.btn.wrong {
+.wrong {
     background-color: #dc3545;
 }
 
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Style du bouton Suivant */
+#next-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#next-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Style du timer */
+#timer {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Style du bouton pour passer au niveau supérieur */
+#next-level-btn {
+    display: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#next-level-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Style pour la page d'accueil et les titres */
 h1, h3, p {
     text-align: center;
-    padding: 0 10px;
-}
-
-nav {
-    background-color: #007bff !important;
-    padding: 10px !important;
-    width: 100% !important;
-    text-align: center !important;
-    color: white !important;
-    box-sizing: border-box !important;
-}
-
-nav a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-
-nav a:hover {
-    background-color: #0056b3; /* Couleur de survol */
-}
-
-@media (max-width: 600px) {
-    body {
-        padding: 0;
-    }
-
-    nav {
-        font-size: 14px;
-    }
+    margin: 20px 0;
 }
